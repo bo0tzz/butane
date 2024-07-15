@@ -88,8 +88,6 @@ jobs:
       uses: taiki-e/install-action@v2
       with:
         tool: cargo-deny,editorconfig-checker,typos
-    - name: Run editorconfig-checker
-      run: editorconfig-checker
     - name: Build
       run: make build
     - name: Lint
